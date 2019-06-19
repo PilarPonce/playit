@@ -1,0 +1,87 @@
+body{
+  background-color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: grey;
+
+
+
+}
+.titulo{
+  width:80%;
+
+
+}
+h1{
+  font-size: 30px;
+  margin-bottom: 0;
+  font-weight: lighter;
+  margin-top: 2.5%;
+
+}
+
+.genero{
+  font-size: 15px;
+  font-weight: lighter;
+
+}
+div.contenedorPadre2  {
+  width: 80%;
+  display: flex;
+  margin-left: : 10%;
+  padding: 0px;
+  height: 80vh;
+  justify-content: space-between;
+}
+
+div.contenedorPadre3 {
+    width: 80%;
+    display: flex;
+    margin: 0px;
+    margin-top: 0.5%;
+    padding: 0px;
+    height: 80vh;
+    justify-content: space-between;
+  }
+  div.posterPeli {
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  background-image: url("https://m.media-amazon.com/images/M/MV5BMjQ2ODIyMjY4MF5BMl5BanBnXkFtZTgwNzY4ODI2NzM@._V1_.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+}
+
+div.infoDePeli {
+  justify-content: space-around;
+  align-items: center;
+  width: 59.2%;
+  height: 100%;
+  background-image: url("https://www.mundopeliculas.tv/wp-content/uploads/2019/05/aladdin.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+
+
+
+
+
+.info{
+  background-color: rgba(248, 248, 248);
+  width:80%;
+
+
+
+
+}
+ul{
+  width: 80%;
+}
