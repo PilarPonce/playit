@@ -1,10 +1,6 @@
 window.addEventListener('load' ,function(){
 
-/* Header */
-
-document.getElementById('user').addEventListener('click', function(){
-  document.querySelector('.bg-modal').style.display = 'flex'
-})
+/* Header y Footer */
 
 document.getElementById('user2').addEventListener('click', function(){
   document.querySelector('.bg-modal').style.display = 'flex'
@@ -25,7 +21,15 @@ document.querySelector('.cerrar').addEventListener('click', function(){
   document.getElementById('hamburguer').style.display = 'flex'
 })
 
-/* Header */
+document.getElementById('logoutbutton').addEventListener('click', function(){
+  document.querySelector('.paginalogout').style.display = 'flex'
+})
+
+document.getElementById('nobutton').addEventListener('click', function(){
+  document.querySelector('.paginalogout').style.display = 'none'
+})
+
+/* Header y Footer */
 
 // LOGIN
 

@@ -91,6 +91,8 @@ form{
   text-align: center;
 }
 
+
+
 .close{
   position: absolute;
   top: 0;
@@ -170,6 +172,57 @@ header a:hover{
 .responsivo a:hover{
   color: rgb(252,0,5);
 }
+
+.paginalogout{
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxlogout{
+  width: 30%;
+  height: 50vh;
+  background-color: white;
+  border-radius: 30px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  box-shadow: 5px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxlogout img{
+  max-width: 250px;
+  max-height: 250px;
+  margin-top: 0px;
+}
+
+.boxlogout p{
+  margin-top: 0px;
+}
+
+.botoneslogout{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.botoneslogout button{
+  width: 48%;
+  border-radius: 0;
+  font-size: 17px;
+}
+
+/* Header */
 
 .hero{
   height: 100vh;
@@ -332,6 +385,24 @@ background-size: cover;
   margin-left: 80px;
 }
 
+.footer button{
+  background-color: rgba(0, 0, 0, 0);
+  width: 80px;
+  font-size: 16px;
+  padding: 0;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+  top: 0;
+}
+
+.footer p{
+  display: flex;
+  align-items: center;
+}
+
 
 @media only screen and (max-device-width: 1030px) {
 
@@ -399,7 +470,7 @@ button{
   }
 
   .navMenu a{
-    display: none;
+    display: none !important;
   }
 
   .hero h1{

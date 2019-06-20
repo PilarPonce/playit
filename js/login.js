@@ -37,21 +37,29 @@ if (nombre.value == "") {
 localStorage.setItem('usuario', nombre.value)
 document.querySelector('#user2 i').style.display = 'none'
 document.querySelector('#user2 p').style.display = 'flex'
-document.querySelector('#user2 p').innerHTML = 'Hola ' + nombre.value
-document.querySelector('#favorite').style.display = 'flex'
+document.querySelector('#user2 p').innerHTML = 'Hola ' + nombre.value + '!'
+document.querySelector('.favorite').style.display = 'flex'
+document.querySelector('.favorite1').style.display = 'flex'
+document.querySelector('.bg-modal').style.display = 'none'
 }
-
-if (localStorage.getItem('usuario') != null) { // Mostrar las cosas
-
-}
-
-
-
-
-
-
 
 })
 
+if (localStorage.getItem('usuario') != null) { // Mostrar las cosas
+  document.querySelector('#user2 i').style.display = 'none'
+  document.querySelector('#user2 p').style.display = 'flex'
+  document.querySelector('#user2 p').innerHTML = 'Hola ' + localStorage.getItem('usuario') + '!'
+  document.querySelector('.favorite').style.display = 'flex'
+  document.querySelector('.favorite1').style.display = 'flex'
+  document.querySelector('.bg-modal').style.display = 'none'
+}
+
+var salir = document.getElementById('yesbutton')
+
+  salir.addEventListener('click', function(){
+    localStorage.removeItem('usuario')
+    document.querySelector('.paginalogout').style.display = 'none'
+    window.location.reload()
+  })
 
 })

@@ -22,7 +22,7 @@
           <a href="generos.html#movies">Movies</a> <!-- Link a la pagina Peliculas -->
           <a href="buscador.html">Search</a> <!-- Link a la pagina Busqueda -->
           <a href="detalle.html">Details</a> <!-- Link a la pagina Detalles -->
-          <a id="favorite" style="display: none;" href="favoritos.html">Favorite</a> <!-- Link a la pagina Favoritos -->
+          <a class="favorite" style="display: none;" href="favoritos.html">Favourite</a> <!-- Link a la pagina Favoritos -->
         </div>
         <div class="login"> <!-- Dentro del div esta el link para logearse y el buscador -->
           <span id="user2">
@@ -60,7 +60,7 @@
             <a href="generos.html/#actionmovies">Movies</a> <!-- Link a la pagina Peliculas -->
             <a href="#">Search</a> <!-- Link a la pagina Busqueda -->
             <a href="#">Details</a> <!-- Link a la pagina Detalles -->
-            <a href="#">Favourite</a> <!-- Link a la pagina Favoritos -->
+            <a class="favorite1" style="display: none;" href="#">Favourite</a> <!-- Link a la pagina Favoritos -->
 
         </div>
 
@@ -102,8 +102,20 @@
               </div>
 
 
-              <button type="submit" name="button">Subscribe</button>
+              <button  type="submit" name="button">Subscribe</button>
+
             </form>
+          </div>
+        </div>
+
+        <div class="paginalogout">
+          <div class="boxlogout">
+            <img src="./images/sadimage.png" alt="">
+            <p>Are you sure you want to log out?</p>
+            <div class="botoneslogout">
+              <button id="yesbutton" type="input" name="button">Yes</button>
+              <button id="nobutton" type="input" name="button">No</button>
+            </div>
           </div>
         </div>
 
@@ -211,8 +223,9 @@
 <div class="footer">
   <img src="./images/DMBlogo.png" alt="">
   <div>
-    <p style="margin-bottom:0; margin-right: 60px;">Justina Padulla, Pedro Bernstein y Franco Darget</p>
+    <p style="margin-bottom:0;">Justina Padulla, Pedro Bernstein y Franco Darget</p>
   </div>
+  <button id="logoutbutton">Log Out</button>
 </div>
 
 <!-- Footer-->
