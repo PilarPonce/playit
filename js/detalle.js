@@ -50,13 +50,22 @@ window.addEventListener("load", function() {
       document.querySelector(".sipnopsis").innerHTML= pelicula.overview;
       document.querySelector(".lenguaje").innerHTML= pelicula. original_language;
       var genero= pelicula.genres
-      for (i=0, i< genero.lenght, i++) {
+      for (i=0; i< genero.length; i++) {
         pelicula.genres[i]
-        document.querySelector(".generoDetalle").innerHTML= "<a href='genero.html?id="+pelicula.genres[i].id+"&nombre="+pelicula.genres[i].name+"'>"+pelicula.genres[i].name+"</a>" }
-
-
-
-
-
-    })
+        document.querySelector(".generoDetalle").innerHTML= "<a href='genero.html?id="+pelicula.genres[i].id+"&nombre="+pelicula.genres[i].name+"'>"+pelicula.genres[i].name+"</a>"
+  }
 })
+var url = "https://api.themoviedb.org/3/movie/ "+idPelicula+"/videos?api_key=704bd3935947752adbb2e6021fffa6dd&language=en-US"
+fetch(url)
+        .then(function(response){
+          return response.json();
+        })
+        .then(function(peliculaTrailer) {
+          console.log(peliculaTrailer);
+          console.log(peliculaTrailer.results[0].key);
+          var urlTrailer= '<iframe width="560" height="315" src="https://www.youtube.com/embed/" '+ peliculaTrailer.results[0].key +'' "frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"'
+
+        })
+        .catch(function(error) {
+          console.log("the error was: " + error);
+        })
