@@ -44,7 +44,11 @@ window.addEventListener("load", function() {
     .then(function(pelicula) {
       console.log(pelicula);
     //  var urlImg = "https://image.tmdb.org/t/p/original"
+
     //  document.querySelector(".posterPeli").innerHTML = "<img src='"+ urlImg + pelicula.poster_path+ "'style='width:300px;'>"";
+
+    //  document.querySelector(".posterPeli").innerHTML = "<img src='"+ urlImg + pelicula.poster_path+ "'style='width:300px;'>";
+
       document.querySelector("h1").innerHTML = pelicula.title;
       document.querySelector(".fecha").innerHTML= pelicula.release_date;
       document.querySelector(".sipnopsis").innerHTML= pelicula.overview;
