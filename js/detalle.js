@@ -43,33 +43,35 @@ window.addEventListener("load", function() {
     })
     .then(function(pelicula) {
       console.log(pelicula);
-    //  var urlImg = "https://image.tmdb.org/t/p/original"
+     var urlImg = "https://image.tmdb.org/t/p/original/"
 
-    //  document.querySelector(".posterPeli").innerHTML = "<img src='"+ urlImg + pelicula.poster_path+ "'style='width:300px;'>"";
+    document.querySelector(".posterPeli").innerHTML = "<img src='"+ urlImg + pelicula.poster_path+ "'style='width:300px;'>";
 
-    //  document.querySelector(".posterPeli").innerHTML = "<img src='"+ urlImg + pelicula.poster_path+ "'style='width:300px;'>";
 
       document.querySelector("h1").innerHTML = pelicula.title;
       document.querySelector(".fecha").innerHTML= pelicula.release_date;
       document.querySelector(".sipnopsis").innerHTML= pelicula.overview;
       document.querySelector(".lenguaje").innerHTML= pelicula. original_language;
-      var genero= pelicula.genres
-      for (i=0; i< genero.length; i++) {
-        pelicula.genres[i]
-        document.querySelector(".generoDetalle").innerHTML= "<a href='genero.html?id="+pelicula.genres[i].id+"&nombre="+pelicula.genres[i].name+"'>"+pelicula.genres[i].name+"</a>"
-  }
+
+     var genero= pelicula.genres
+     for (i=0; i< genero.length; i++) {
+       pelicula.genres[i]
+       document.querySelector(".generoDetalle").innerHTML= "<a href='generos.html'>"+pelicula.genres[i].name+"</a>"
+ }
 })
 var url = "https://api.themoviedb.org/3/movie/ "+idPelicula+"/videos?api_key=704bd3935947752adbb2e6021fffa6dd&language=en-US"
 fetch(url)
-        .then(function(response){
-          return response.json();
-        })
-        .then(function(peliculaTrailer) {
-          console.log(peliculaTrailer);
-          console.log(peliculaTrailer.results[0].key);
-          var urlTrailer= '<iframe width="560" height="315" src="https://www.youtube.com/embed/" '+ peliculaTrailer.results[0].key +'' "frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"'
+  .then(function(response){
+    return response.json();
+    })
+    .then(function(peliculaTrailer) {
+     console.log(peliculaTrailer);
+     console.log(peliculaTrailer.results[0].key);
+      var urlTrailer= '<iframe width="560" height="315" src="https://www.youtube.com/embed/'+ peliculaTrailer.results[0].key +'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+      document.querySelector(".infoDePeli").innerHTML= urlTrailer;
 
+      })
+       .catch(function(error) {
+         console.log("the error was: " + error);
         })
-        .catch(function(error) {
-          console.log("the error was: " + error);
-        })
+})
