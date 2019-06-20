@@ -1,4 +1,4 @@
-window.onload = function(){
+window.addEventListener('load' ,function(){
 
 /* Header */
 
@@ -14,7 +14,6 @@ document.querySelector('.close').addEventListener('click', function(){
   document.querySelector('.bg-modal').style.display = 'none'
 })
 
-/* Header */
 
 document.getElementById('hamburguer').addEventListener('click', function(){
   document.getElementById('hamburguer').style.display = 'none'
@@ -25,6 +24,8 @@ document.querySelector('.cerrar').addEventListener('click', function(){
   document.querySelector('.responsivo').style.display = 'none'
   document.getElementById('hamburguer').style.display = 'flex'
 })
+
+/* Header */
 
 // LOGIN
 
@@ -78,4 +79,4 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=704bd3935947752adbb2e6
 
       } */
 
-}
+})

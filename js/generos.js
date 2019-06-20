@@ -1,5 +1,11 @@
 window.onload = function(){
 
+  /* Header */
+
+  document.getElementById('user2').addEventListener('click', function(){
+    document.querySelector('.bg-modal').style.display = 'flex'
+  })
+
   document.getElementById('user2').addEventListener('click', function(){
     document.querySelector('.bg-modal').style.display = 'flex'
   })
@@ -7,6 +13,7 @@ window.onload = function(){
   document.querySelector('.close').addEventListener('click', function(){
     document.querySelector('.bg-modal').style.display = 'none'
   })
+
 
   document.getElementById('hamburguer').addEventListener('click', function(){
     document.getElementById('hamburguer').style.display = 'none'
@@ -17,6 +24,8 @@ window.onload = function(){
     document.querySelector('.responsivo').style.display = 'none'
     document.getElementById('hamburguer').style.display = 'flex'
   })
+
+  /* Header */
 
 fetch("https://api.themoviedb.org/3/discover/movie?api_key=704bd3935947752adbb2e6021fffa6dd&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=28")
   .then(function(respuesta) {

@@ -6,14 +6,14 @@ body{
   align-items: center;
 }
 
-/*HEADER*/
+/* Header */
 
 header{
   display: flex;
   background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
   color: lightgrey;
   justify-content: space-between;
-  height: 90px;
+  height: 100px;
   align-items: center;
   width: 100%;
   position: fixed;
@@ -172,7 +172,7 @@ header a:hover{
   color: rgb(252,0,5);
 }
 
-/*HEADER*/
+/* Header */
 
 button{
   color: white;

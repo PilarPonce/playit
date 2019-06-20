@@ -16,102 +16,101 @@
 
     <!-- Header-->
 
-
-    <header> <!-- Aca esta todo el header con el logo y los menus para navegar por la pagina (FLEXBOX) -->
-        <div class="navMenu"> <!-- Dentro del div esta el logo -->
-          <img src="./images/ultimoplay.png" alt=""> <!-- La imagen del logo -->
-          <a href="home.html" id='home'>Home</a> <!-- Link a la pagina Home -->
-          <a href="generos.html">Genere</a> <!-- Link a la pagina Genero -->
-          <a href="generos.html/#actionmovies">Movies</a> <!-- Link a la pagina Peliculas -->
-          <a href="#">Search</a> <!-- Link a la pagina Busqueda -->
-          <a href="#">Details</a> <!-- Link a la pagina Detalles -->
-          <a href="#">Favorite</a> <!-- Link a la pagina Favoritos -->
-        </div>
-        <div class="login"> <!-- Dentro del div esta el link para logearse y el buscador -->
-          <span id="user2">
-            <i class="fas fa-user"></i>
-          </span>
-
-          <div id="searchbar" class="uk-navbar-right">
-
-            <a class="uk-navbar-toggle" href="#modal-full" uk-search-icon uk-toggle></a>
-
-          </div>
-
-          <div id="modal-full" class="uk-modal-full uk-modal" uk-modal>
-            <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
-              <button class="uk-modal-close-full" type="button" uk-close></button>
-              <form class="uk-search uk-search-large">
-                <input class="uk-search-input uk-text-center" type="search" placeholder="Search..." autofocus>
-                </form>
+        <header> <!-- Aca esta todo el header con el logo y los menus para navegar por la pagina (FLEXBOX) -->
+            <div class="navMenu"> <!-- Dentro del div esta el logo -->
+              <img src="./images/ultimoplay.png" alt=""> <!-- La imagen del logo -->
+              <a href="home.html" id='home'>Home</a> <!-- Link a la pagina Home -->
+              <a href="generos.html">Genere</a> <!-- Link a la pagina Genero -->
+              <a href="generos.html#movies">Movies</a> <!-- Link a la pagina Peliculas -->
+              <a href="buscador.html">Search</a> <!-- Link a la pagina Busqueda -->
+              <a href="detalle.html">Details</a> <!-- Link a la pagina Detalles -->
+              <a id="favorite" style="display: none;" href="favoritos.html">Favorite</a> <!-- Link a la pagina Favoritos -->
             </div>
-          </div>
+            <div class="login"> <!-- Dentro del div esta el link para logearse y el buscador -->
+              <span id="user2">
+                <i class="fas fa-user"></i>
+                <p style="display:none; font-size: 20px;"></p>
+              </span>
 
-        <span id="hamburguer">
-          <i class="fas fa-bars"></i>
-        </span>
-        </div>
-        </header>
+              <div id="searchbar" class="uk-navbar-right">
 
-        <div class="responsivo">
-          <div class="cerrar">
-            +
-          </div>
-            <a href="home.html" >Home</a> <!-- Link a la pagina Home -->
-            <a href="terminos.html">Genere</a> <!-- Link a la pagina Genero -->
-            <a href="#">Movies</a> <!-- Link a la pagina Peliculas -->
-            <a href="#">Search</a> <!-- Link a la pagina Busqueda -->
-            <a href="#">Details</a> <!-- Link a la pagina Detalles -->
-            <a href="#">Favorite</a> <!-- Link a la pagina Favoritos -->
+                <a class="uk-navbar-toggle" href="#modal-full" uk-search-icon uk-toggle></a>
 
-        </div>
+              </div>
 
-        <div class="bg-modal">
-          <div class="modal-content">
-            <div class="close">
-              +
-            </div>
-            <span style="font-size: 5rem;">
-              <i class="far fa-user"></i>
+              <div id="modal-full" class="uk-modal-full uk-modal" uk-modal>
+                <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+                  <button class="uk-modal-close-full" type="button" uk-close></button>
+                  <form class="uk-search uk-search-large">
+                    <input class="uk-search-input uk-text-center" type="search" placeholder="Search..." autofocus>
+                    </form>
+                </div>
+              </div>
+
+            <span id="hamburguer">
+              <i class="fas fa-bars"></i>
             </span>
-            <p>Log In</p>
+            </div>
+            </header>
 
-            <form action="">
+            <div class="responsivo">
+              <div class="cerrar">
+                +
+              </div>
+                <a href="home.html" >Home</a> <!-- Link a la pagina Home -->
+                <a href="generos.html">Genere</a> <!-- Link a la pagina Genero -->
+                <a href="generos.html/#actionmovies">Movies</a> <!-- Link a la pagina Peliculas -->
+                <a href="#">Search</a> <!-- Link a la pagina Busqueda -->
+                <a href="#">Details</a> <!-- Link a la pagina Detalles -->
+                <a href="#">Favourite</a> <!-- Link a la pagina Favoritos -->
 
-              <div class="uk-margin">
-                <div class="uk-inline uk-width-2-3">
-                  <span class="uk-form-icon" uk-icon="icon: user"></span>
-                  <input class="uk-input" type="text">
+            </div>
+
+            <div class="bg-modal">
+              <div class="modal-content">
+                <div class="close">
+                  +
                 </div>
+                <span style="font-size: 5rem;">
+                  <i class="far fa-user"></i>
+                </span>
+                <p>Log In</p>
+
+                <form id="formlogin" action="">
+
+                  <div class="uk-margin">
+                    <div class="uk-inline uk-width-2-3">
+                      <span class="uk-form-icon" uk-icon="icon: user"></span>
+                      <input class="uk-input" type="text" id="name">
+                    </div>
+                  </div>
+
+                  <div class="uk-margin">
+                    <div class="uk-inline uk-width-2-3">
+                      <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                      <input class="uk-input" type="text" id="email">
+                    </div>
+                  </div>
+
+                  <div class="uk-margin">
+                    <div class="uk-inline uk-width-2-3">
+
+                    <select class="uk-select" id="genero">
+                      <option>Male</option>
+                      <option>Female</option>
+                      <option>Undefined</option>
+                    </select>
+                  </div>
+                  </div>
+
+
+                  <button type="submit" name="button">Subscribe</button>
+                </form>
               </div>
+            </div>
 
-              <div class="uk-margin">
-                <div class="uk-inline uk-width-2-3">
-                  <span class="uk-form-icon" uk-icon="icon: mail"></span>
-                  <input class="uk-input" type="text">
-                </div>
-              </div>
+            <!-- Header-->
 
-              <div class="uk-margin">
-                <div class="uk-inline uk-width-2-3">
-
-                <select class="uk-select">
-                  <option>Male</option>
-                  <option>Female</option>
-                  <option>Undefined</option>
-                </select>
-              </div>
-              </div>
-
-
-              <button type="button" name="button">Suscribe</button>
-            </form>
-          </div>
-        </div>
-
-
-
-    <!-- Header-->
 
         <div class="listaGeneros">
 
@@ -153,12 +152,12 @@
           </div>
         </div>
 
-        <div class="peliculas">
+        <div id="movies" class="peliculas">
           <div class="tituloGenero">
-            <h1 class="uk-animation-slide-bottom">Find the genre you are looking for</h1>
+            <h1  class="uk-animation-slide-bottom">Find the movie you are looking for</h1>
           </div>
 
-          <h1 id="actionmovies"  style="margin-top: 0;">Action</h1>
+          <h1  style="margin-top: 0;">Action</h1>
 
           <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
@@ -283,7 +282,7 @@
 
 
 
-
+<script src="./js/login.js" charset="utf-8"></script>
 <script rel="stylesheet" src="./js/generos.js"></script>
   </body>
 </html>
