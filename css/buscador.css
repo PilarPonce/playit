@@ -200,8 +200,8 @@ p {
   padding: 0px;
 }
 
-.buscador {
-  width: 80%;
+div.buscador {
+  width: 73%;
   margin-top: 0px;
 }
 
@@ -279,7 +279,10 @@ font
   margin-bottom: 30px;
 }
 
-/* .uk-search-input {
-  width: 100%;
+
+input.uk-search-input {
+  width: 620px;
+  height: 60px;
   padding: 0;
-} */
+  margin: 0;
+}

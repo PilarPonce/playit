@@ -52,6 +52,7 @@ window.addEventListener('load' ,function(){
     var urlImg = "https://image.tmdb.org/t/p/original/"
         // recorro el array de pelis
     for (var i = 0; i < arrayDePeliculas.length; i++) {
+      if (arrayDePeliculas[i].poster_path != null) {
       li = "<li>"
       li += "<a href='detalle.html?idPelicula="+arrayDePeliculas[i].id+"'>"
       li += "<p>" + arrayDePeliculas[i].title + "</p>"
@@ -59,7 +60,8 @@ window.addEventListener('load' ,function(){
       li += "</a>"
       li += "</li>"
       ul.innerHTML += li
-    }
+      }
+      }
   })
   .catch(function(error){
   console.log("the error was:" + error)
