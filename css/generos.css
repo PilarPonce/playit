@@ -295,6 +295,25 @@ button:hover{
   font-weight: lighter;
 }
 
+.footer{
+  width: 100%;
+  height: 50px;
+  color: rgb(252,0,5);
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  justify-content: space-between;
+  margin-top: 5rem;
+  padding-bottom: 0px;
+}
+
+.footer img{
+  max-width: 100px;
+  max-height: 30px;
+  margin-left: 80px;
+}
+
 @media only screen and (max-device-width: 1030px) {
 
   .listaGeneros{
@@ -325,6 +344,8 @@ button:hover{
 
 @media only screen and (max-device-width: 550px) {
 
+/* Header */
+
 header{
   height: 13vh;
 }
@@ -332,6 +353,15 @@ header{
 header img{
   max-width: 300px;
   max-height: 300px;
+}
+
+#user2{
+  font-size: 3.5rem;
+}
+
+#searchbar svg{
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
 button{
@@ -356,20 +386,6 @@ button{
     display: none;
   }
 
-  .hero h1{
-    font-size: 4rem;
-    margin-top: 13vh;
-  }
-
-  #user2{
-    font-size: 3.5rem;
-  }
-
-  #searchbar svg{
-    width: 3.5rem;
-    height: 3.5rem;
-  }
-
   .modal-content{
     width: 70%;
     height: 40vh;
@@ -382,5 +398,7 @@ button{
   input{
     width: 50%;
   }
+
+  /* Header */
 
 }
