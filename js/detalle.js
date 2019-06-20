@@ -43,11 +43,19 @@ window.addEventListener("load", function() {
     })
     .then(function(pelicula) {
       console.log(pelicula);
-      document.querySelector(".posterPeli").src = pelicula.poster_path;
+    //  var urlImg = "https://image.tmdb.org/t/p/original"
+    //  document.querySelector(".posterPeli").innerHTML = "<img src='"+ urlImg + pelicula.poster_path+ "'style='width:300px;'>"";
       document.querySelector("h1").innerHTML = pelicula.title;
       document.querySelector(".fecha").innerHTML= pelicula.release_date;
       document.querySelector(".sipnopsis").innerHTML= pelicula.overview;
       document.querySelector(".lenguaje").innerHTML= pelicula. original_language;
+      var genero= pelicula.genres
+      for (i=0, i< genero.lenght, i++) {
+        pelicula.genres[i]
+        document.querySelector(".generoDetalle").innerHTML= "<a href='genero.html?id="+pelicula.genres[i].id+"&nombre="+pelicula.genres[i].name+"'>"+pelicula.genres[i].name+"</a>" }
+
+
+
 
 
     })
