@@ -248,9 +248,34 @@ p {
 }
 
 .uk-navbar-left{
-  margin-right: 0px;
+  width: 100%;
 }
 
+.uk-navbar-item{
+  width: 100%;
+}
+
+.uk-search-navbar{
+  width: 100% !important;
+}
+
+.searchbutton{
+  position: absolute;
+  right: 0;
+width: 100px;
+height: 100%;
+background-color: rgba(248, 248, 248, 1);
+border: none;
+top:0;
+}
+
+.posterPeli{
+  width: 100%;
+}
+
+.infoDePeli ul{
+  width: 100%;
+}
 
 /*.contenedorPadre{
   width: 80%;
@@ -353,3 +378,47 @@ font
   padding: 0;
   margin: 0;
 }*/
+
+/*footer*/
+
+.footer{
+  width: 100%;
+  height: 50px;
+  color: rgb(252,0,5);
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  justify-content: space-between;
+  margin-top: 5rem;
+  padding-bottom: 0px;
+  margin-top: 150rem;
+}
+
+.footer img{
+  max-width: 100px;
+  max-height: 30px;
+  margin-left: 80px;
+}
+
+.footer button{
+  background-color: rgba(0, 0, 0, 0);
+  width: 80px;
+  font-size: 16px;
+  padding: 0;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+  top: 0;
+  border: none;
+  color: red;
+}
+
+.footer p{
+  display: flex;
+  align-items: center;
+}
+
+/*footer*/

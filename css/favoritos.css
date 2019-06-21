@@ -305,6 +305,7 @@ text-shadow: 2px 2px rgb(0,0,0);
   justify-content: space-between;
   margin-top: 10rem;
   padding-bottom: 0px;
+  color: red;
 }
 
 .footer img{
