@@ -11,18 +11,18 @@
   </head>
   <body>
 
-    <!-- Header -->
+    <!-- Header-->
 
         <header> <!-- Aca esta todo el header con el logo y los menus para navegar por la pagina (FLEXBOX) -->
             <div class="navMenu"> <!-- Dentro del div esta el logo -->
               <img src="./images/ultimoplay.png" alt=""> <!-- La imagen del logo -->
               <a href="home.html" id='home'>Home</a> <!-- Link a la pagina Home -->
-              <a href="generos.html">Genere</a> <!-- Link a la pagina Genero -->
+              <a href="generos.html">Genre</a> <!-- Link a la pagina Genero -->
               <a href="generos.html#movies">Movies</a> <!-- Link a la pagina Peliculas -->
               <a href="buscador.html">Search</a> <!-- Link a la pagina Busqueda -->
-              <a href="detalle.html">Details</a> <!-- Link a la pagina Detalles -->
-              <a id="favorite" style="display: none;" href="favoritos.html">Favorite</a> <!-- Link a la pagina Favoritos -->
+              <a class="favorite" style="display: none;" href="favoritos.html">Favorite</a> <!-- Link a la pagina Favoritos -->
             </div>
+
             <div class="login"> <!-- Dentro del div esta el link para logearse y el buscador -->
               <span id="user2">
                 <i class="fas fa-user"></i>
@@ -38,8 +38,8 @@
               <div id="modal-full" class="uk-modal-full uk-modal" uk-modal>
                 <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
                   <button class="uk-modal-close-full" type="button" uk-close></button>
-                  <form class="uk-search uk-search-large">
-                    <input class="uk-search-input uk-text-center" type="search" placeholder="Search..." autofocus>
+                  <form class="uk-search uk-search-large" action="buscador.html" method="get">
+                    <input class="uk-search-input uk-text-center" type="search" placeholder="Search..." autofocus name="busqueda">
                     </form>
                 </div>
               </div>
@@ -55,11 +55,10 @@
                 +
               </div>
                 <a href="home.html" >Home</a> <!-- Link a la pagina Home -->
-                <a href="generos.html">Genere</a> <!-- Link a la pagina Genero -->
-                <a href="generos.html/#actionmovies">Movies</a> <!-- Link a la pagina Peliculas -->
-                <a href="#">Search</a> <!-- Link a la pagina Busqueda -->
-                <a href="#">Details</a> <!-- Link a la pagina Detalles -->
-                <a href="#">Favourite</a> <!-- Link a la pagina Favoritos -->
+                <a href="generos.html">Genre</a> <!-- Link a la pagina Genero -->
+                <a href="generos.html#movies">Movies</a> <!-- Link a la pagina Peliculas -->
+                <a href="buscador.html">Search</a> <!-- Link a la pagina Busqueda -->
+                <a class="favorite1" style="display: none;" href="#">Favourite</a> <!-- Link a la pagina Favoritos -->
 
             </div>
 
@@ -101,12 +100,24 @@
                   </div>
 
 
-                  <button type="submit" name="button">Subscribe</button>
+                  <button  type="submit" name="button">Subscribe</button>
+
                 </form>
               </div>
             </div>
-            <!-- Header-->
 
+            <div class="paginalogout">
+              <div class="boxlogout">
+                <img src="./images/sadimage.png" alt="">
+                <p>Are you sure you want to log out?</p>
+                <div class="botoneslogout">
+                  <button id="yesbutton" type="input" name="button">Yes</button>
+                  <button id="nobutton" type="input" name="button">No</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Header-->
 
 <div class="titulo">
   <h1>Search</h1>
@@ -121,19 +132,16 @@
             <div class="uk-navbar-item">
                 <form method="GET" action="buscador.html" class="uk-search uk-search-navbar">
                     <span uk-search-icon></span>
-                    <input class="uk-search-input" type="search" placeholder="" name="busqueda">
+                    <input class="uk-search-input busqueda" type="search" placeholder="" name="busqueda">
                     <!-- <button type="submit" name="button">Buscar</button> -->
+
+                    <button class="searchbutton" type="submit" name="button">Search</button>
                 </form>
             </div>
         </div>
     </nav>
 
   </div>
-
-  <div class="buttonSearch">
-      <button type="button" name="button">Search</button>
-  </div>
-
 </div>
 
 <div class="peliculas">
