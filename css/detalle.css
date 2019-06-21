@@ -202,12 +202,23 @@ header a:hover{
 }
 
 .contenedorPadre2  {
-  width: 80%;
+  width: 50%;
   display: flex;
-  margin-left: : 10%;
   padding: 0px;
-  height: 80vh;
+  height: 60vh;
   justify-content: space-between;
+  position: relative;
+  right: 13.5rem;
+}
+
+.posterPeli img{
+  min-width: 80%;
+  min-height: 60vh;
+}
+
+.infoDePeli iframe{
+  min-width: 100%;
+  min-height: 100%;
 }
 
 div.contenedorPadre3 {
@@ -236,7 +247,7 @@ div.infoDePeli {
   align-items: center;
   width: 59.2%;
   height: 100%;
-  
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
