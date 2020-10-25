@@ -34,7 +34,7 @@ if (nombre.value == "") {
   });
 }else {
   // escribir los datos en el local storage
-localStorage.setItem('usuario', nombre.value)
+localStorage.setItem('usuario', nombre.value)  //key name, key value
 document.querySelector('#user2 i').style.display = 'none'
 document.querySelector('#user2 p').style.display = 'flex'
 document.querySelector('#user2 p').innerHTML = 'Hola ' + nombre.value + '!'
